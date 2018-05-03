@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
+pre,textarea{overflow:auto}
+[hidden],audio:not([controls]),template{display:none}
+details,main,summary{display:block}
+input[type=number]{width:auto}
+input[type=search]{-webkit-appearance:textfield}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+progress{display:inline-block}
+small{font-size:75%}
+textarea{resize:vertical}
+[unselectable]{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+*,::after,::before{box-sizing:inherit;border-style:solid;border-width:0}
+*{font-size:inherit;line-height:inherit;margin:0;padding:0}
+::after,::before{text-decoration:inherit;vertical-align:inherit}
+:root{-ms-overflow-style:-ms-autohiding-scrollbar;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;box-sizing:border-box;cursor:default;font:16px/1.5 sans-serif;text-rendering:optimizeLegibility}
+a{text-decoration:none}
+audio,canvas,iframe,img,svg,video{vertical-align:middle}
+button,input,select,textarea{background-color:transparent;color:inherit;font-family:inherit;font-style:inherit;font-weight:inherit;min-height:1.5em}
+code,kbd,pre,samp{font-family:monospace,monospace}
+nav ol,nav ul{list-style:none}
+select{-moz-appearance:none;-webkit-appearance:none}
+select::-ms-expand{display:none}
+select::-ms-value{color:currentColor}
+table{border-collapse:collapse;border-spacing:0}
+::-moz-selection{background-color:#B3D4FC;text-shadow:none}
+::selection{background-color:#B3D4FC;text-shadow:none}
+@media screen{[hidden~=screen]{display:inherit}
+[hidden~=screen]:not(:active):not(:focus):not(:target){clip:rect(0 0 0 0)!important;position:absolute!important}
+}
+/*# sourceMappingURL=sanitize.css.map */
+
+/* ******************************************************************** */
+/* 共通 */
+/* ******************************************************************** */
+body{
+    font-family: "Sawarabi Mincho";
+    letter-spacing: 2px;
+    background-color: #FEF6E0;
+    color: #102449;
+}
+* {
+    -webkit-appearance: none;
+}
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+    
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#header{
+    background-color: #102449;
+    width: 100%;
+    padding: 20px;
+}
+#header img{
+    width: 25px;
+    margin-right: 20px;
+    float: left;
+}
+h1{
+    font-family: 'Libre Baskerville', serif;
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+#main{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+#main h2{
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: 40px;
+}
+#main .main_wrapper{
+    margin-top: 50px;
+    display: flex;
+}
+.inputarea,.listarea{
+    width: 50%;
+}
+h3{
+    font-size: 20px;
+    border-bottom: 2px solid #102449;
+    width: 60px;
+    margin: 0 auto 30px;
+}
+.inputarea h4{
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #102449;
+    width: 80%;
+    margin: 0 auto;
+    padding: 7px 0 5px;
+}
+input{
+    border: 2px solid #102449;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    width: 80%;
+    height: 48px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+button{
+    border: 2px solid #102449;
+    background-color: #102449;
+    color: #FFFFFF;
+    font-size: 16px;
+    width: 80%;
+    height: 48px;
+    margin-top: 20px;
+}
+.listarea_box{
+    text-align: left;
+    border: 2px solid #102449;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    padding: 20px;
+    height: 395px;
+    overflow-y: scroll;
+}
+.listarea_box h4{
+    border-bottom: 1px solid #102449;
+    padding: 10px;
+}
+.listarea_box table{
+    width: 100%;
+}
+.listarea_box tr{
+    border-bottom: 1px solid #102449;
+}
+.listarea_box th,.listarea_box td{
+    padding: 10px 20px;
+}
+#footer{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+/* ******************************************************************** */
+/* スマホのみ */
+/* ******************************************************************** */
+
+@media screen and (max-width: 767px){
+}
+
+
+/* ******************************************************************** */
+/* スマホとタブレット */
+/* ******************************************************************** */
+
+@media screen and (max-width: 1023px){
+    #main .main_wrapper{
+        display: block;
+    }
+    .inputarea,.listarea{
+        width: 100%;
+    }
+    .inputarea{
+        margin-bottom: 50px;
+    }
+    input{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+    .inputarea h4{
+        width: 100%;
+    }
+}
+
+
+/* ******************************************************************** */
+/* タブレットのみ */
+/* ******************************************************************** */
+
+@media screen and (min-width : 768px) and (max-width: 1023px) {
+
+}
+
+/* ******************************************************************** */
+/* PC（小画面）とPC（大画面） */
+/* ******************************************************************** */
+
+@media screen and (min-width : 1024px){
+
+}
